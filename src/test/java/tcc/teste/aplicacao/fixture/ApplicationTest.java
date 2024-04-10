@@ -1,4 +1,4 @@
 package tcc.teste.aplicacao.fixture;
 
-public class Teste {
+public class ApplicationTest {
 }
