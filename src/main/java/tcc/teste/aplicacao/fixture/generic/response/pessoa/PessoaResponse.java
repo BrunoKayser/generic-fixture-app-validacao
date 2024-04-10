@@ -1,4 +1,4 @@
-package tcc.teste.aplicacao.fixture.generic.request;
+package tcc.teste.aplicacao.fixture.generic.response.pessoa;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import tcc.teste.aplicacao.fixture.generic.domain.enums.GeneroEnum;
+import tcc.teste.aplicacao.fixture.generic.response.animal.AnimalResponse;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -16,14 +17,14 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PessoaRequest {
+public class PessoaResponse {
 
     private String nome;
     private String apelido;
-    private String sobrenome;
     private GeneroEnum genero;
-    private List<AnimalRequest> animaisDeEstimacao;
+    private String sobrenome;
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
+    private List<AnimalResponse> animaisDeEstimacao;
 
 }

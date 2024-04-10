@@ -1,4 +1,4 @@
-package tcc.teste.aplicacao.fixture.generic.domain;
+package tcc.teste.aplicacao.fixture.generic.domain.pessoa;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -12,12 +12,14 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import tcc.teste.aplicacao.fixture.generic.domain.animal.Animal;
 import tcc.teste.aplicacao.fixture.generic.domain.enums.GeneroEnum;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
 
+import static java.util.Objects.nonNull;
 import static tcc.teste.aplicacao.fixture.generic.constants.Constantes.DEZOITO_ANOS;
 
 @Getter
@@ -47,6 +49,13 @@ public class Pessoa {
 
     public boolean ehDeMaior() {
         return getIdade() >= DEZOITO_ANOS;
+    }
+
+    public void setPessoaNosAnimais() {
+        if (nonNull(animaisDeEstimacao)) {
+            animaisDeEstimacao
+                    .forEach(animal -> animal.setPessoa(this));
+        }
     }
 
 }

@@ -1,4 +1,4 @@
-package tcc.teste.aplicacao.fixture.generic.domain;
+package tcc.teste.aplicacao.fixture.generic.response.pessoa;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PessoaInserida {
+public class PessoaInseridaResponse {
 
     private Long id;
 

@@ -1,4 +1,4 @@
-package tcc.teste.aplicacao.fixture.generic.response;
+package tcc.teste.aplicacao.fixture.generic.domain.pet.shop;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PessoaInseridaResponse {
+public class PetShopInserida {
 
     private Long id;
 

@@ -1,14 +1,17 @@
 ### Olá
 
-Essa aplicação tem como intuíto servir de auxílio na entrevista para validação da biblioteca promover o uso da biblioteca Generic Fixcture (https://github.com/BrunoKayser/generic-fixture)
+Essa aplicação faz parte do processo para validaçar o uso da biblioteca Generic Fixcture (https://github.com/BrunoKayser/generic-fixture)
 
 Se você esta contribuindo neste repositório é por que é um profissional especial, pois apoiar voluntariamente é um apoio extraordinário.
 
 **Obrigado.**
 
-Para seguirmos com os testes, será necessário implementar os testes unitários das classes abaixo.
+Para seguirmos com os testes, será necessário implementar os testes unitários dois dois fluxos PESSOA e PET SHOP, seguindo os pré-requisitos abaixo:
+- Qualquer objeto de teste deve ser mockado
+- Você deve codificar PESSOA **sem utilizar** a biblioteca Generic Fixture.
+- Você deve codificar PET SHOP **utilizando** a biblioteca eneric fixture.
 
-### Métodos de teste a serem implementados:
+### Métodos de teste a serem implementados no fluxo de PESSOA:
 - PessoaControllerTest
   - deveInserirComSucesso
   - deveConsultarComSucesso
@@ -21,4 +24,21 @@ Para seguirmos com os testes, será necessário implementar os testes unitários
   - deveLancarExcecaoQuandoNaoEncontrarPessoaPeloId
 - InserirPessoaServiceTest
   - deveInserirComSucesso
-  - naoDeveInserirQuandoPessoaForMenorDeIdade
+  - deveLancarExceptionQuandoPessoaForMenorDeIdade
+  - deveLancarExceptionQuandoPessoaTerMaisQueDoisAnimais
+
+### Métodos de teste a serem implementados no fluxo de PET SHOP:
+- PetShopControllerTest
+  - deveInserirComSucesso
+  - deveConsultarComSucesso
+- PetShopControllerTest
+  - deveMapearPetShopRequestParaPetShopComSucesso
+  - deveMapearPetShopInseridaParaPetShopInseridaResponseComSucesso
+  - deveMapearPetShopParaPetShopResponseComSucesso
+- ConsultarPetShopServiceTest
+  - deveConsultarComSucesso
+  - deveLancarExcecaoQuandoNaoEncontrarPetShopPeloId
+- InserirPetShopServiceTest
+  - deveInserirComSucesso
+  - deveLancarExceptionQuandoDataDeInauguracaoForNoPassado
+  - deveLancarExceptionQuandoPetShopTerMenosQueDoisFuncionarios

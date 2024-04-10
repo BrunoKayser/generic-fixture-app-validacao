@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tcc.teste.aplicacao.fixture.generic.mapper.PessoaMapper;
 import tcc.teste.aplicacao.fixture.generic.request.PessoaRequest;
-import tcc.teste.aplicacao.fixture.generic.response.PessoaInseridaResponse;
-import tcc.teste.aplicacao.fixture.generic.response.PessoaResponse;
-import tcc.teste.aplicacao.fixture.generic.service.ConsultarPessoaService;
-import tcc.teste.aplicacao.fixture.generic.service.InserirPessoaService;
+import tcc.teste.aplicacao.fixture.generic.response.pessoa.PessoaInseridaResponse;
+import tcc.teste.aplicacao.fixture.generic.response.pessoa.PessoaResponse;
+import tcc.teste.aplicacao.fixture.generic.service.pessoa.ConsultarPessoaService;
+import tcc.teste.aplicacao.fixture.generic.service.pessoa.InserirPessoaService;
 
 @RequiredArgsConstructor
 @RestController

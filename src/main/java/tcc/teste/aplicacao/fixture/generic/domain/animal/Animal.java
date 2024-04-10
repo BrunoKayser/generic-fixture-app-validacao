@@ -1,4 +1,4 @@
-package tcc.teste.aplicacao.fixture.generic.domain;
+package tcc.teste.aplicacao.fixture.generic.domain.animal;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -12,6 +12,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import tcc.teste.aplicacao.fixture.generic.domain.pessoa.Pessoa;
 import tcc.teste.aplicacao.fixture.generic.domain.enums.TipoAnimalEnum;
 
 import java.time.LocalDate;

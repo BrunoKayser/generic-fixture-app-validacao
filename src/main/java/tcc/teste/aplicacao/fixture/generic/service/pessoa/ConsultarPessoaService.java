@@ -1,8 +1,8 @@
-package tcc.teste.aplicacao.fixture.generic.service;
+package tcc.teste.aplicacao.fixture.generic.service.pessoa;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import tcc.teste.aplicacao.fixture.generic.domain.Pessoa;
+import tcc.teste.aplicacao.fixture.generic.domain.pessoa.Pessoa;
 import tcc.teste.aplicacao.fixture.generic.exceptions.NaoEncontradoException;
 import tcc.teste.aplicacao.fixture.generic.repository.PessoaRepository;
 

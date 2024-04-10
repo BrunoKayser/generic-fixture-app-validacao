@@ -3,11 +3,11 @@ package tcc.teste.aplicacao.fixture.generic.mapper;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
-import tcc.teste.aplicacao.fixture.generic.domain.Pessoa;
-import tcc.teste.aplicacao.fixture.generic.domain.PessoaInserida;
+import tcc.teste.aplicacao.fixture.generic.domain.pessoa.Pessoa;
+import tcc.teste.aplicacao.fixture.generic.domain.pessoa.PessoaInserida;
 import tcc.teste.aplicacao.fixture.generic.request.PessoaRequest;
-import tcc.teste.aplicacao.fixture.generic.response.PessoaInseridaResponse;
-import tcc.teste.aplicacao.fixture.generic.response.PessoaResponse;
+import tcc.teste.aplicacao.fixture.generic.response.pessoa.PessoaInseridaResponse;
+import tcc.teste.aplicacao.fixture.generic.response.pessoa.PessoaResponse;
 
 @Component
 @RequiredArgsConstructor
