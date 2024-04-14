@@ -53,7 +53,7 @@ class PetShopMapperTest {
     when(modelMapper.map(petShopInserida, PetShopInseridaResponse.class))
         .thenReturn(pet);
 
-    final var result = mapper.toPessoaInseridaResponse(petShopInserida);
+    final var result = mapper.toPetShopInseridaResponse(petShopInserida);
 
     assertNotNull(result);
     assertEquals(pet, result);
@@ -70,7 +70,7 @@ class PetShopMapperTest {
     when(modelMapper.map(petShop, PetShopResponse.class))
         .thenReturn(petShopResponse);
 
-    final var result = mapper.toPessoaResponse(petShop);
+    final var result = mapper.toPetShopResponse(petShop);
 
     assertNotNull(result);
     assertEquals(petShopResponse, result);

@@ -53,7 +53,7 @@ class PetShopControllerTest {
     when(inserirPetShopService.inserir(pet))
         .thenReturn(petInserida);
 
-    when(petShopMapper.toPessoaInseridaResponse(petInserida))
+    when(petShopMapper.toPetShopInseridaResponse(petInserida))
         .thenReturn(petInseridaResp);
 
     final var result = controller.insert(petRequest);
@@ -74,10 +74,10 @@ class PetShopControllerTest {
     when(consultarPetShopService.consultar(id))
         .thenReturn(pet);
 
-    when(petShopMapper.toPessoaResponse(pet))
+    when(petShopMapper.toPetShopResponse(pet))
         .thenReturn(petResponse);
 
-    final var result = controller.getPessoa(id);
+    final var result = controller.getPetShop(id);
 
     assertNotNull(result);
   }
