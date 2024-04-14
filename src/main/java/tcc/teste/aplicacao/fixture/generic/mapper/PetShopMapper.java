@@ -21,11 +21,11 @@ public class PetShopMapper {
     }
 
 
-    public PetShopInseridaResponse toPessoaInseridaResponse(PetShopInserida petShopInserida) {
+    public PetShopInseridaResponse toPetShopInseridaResponse(PetShopInserida petShopInserida) {
         return modelMapper.map(petShopInserida, PetShopInseridaResponse.class);
     }
 
-    public PetShopResponse toPessoaResponse(PetShop petShop) {
+    public PetShopResponse toPetShopResponse(PetShop petShop) {
         return modelMapper.map(petShop, PetShopResponse.class);
     }
 }
