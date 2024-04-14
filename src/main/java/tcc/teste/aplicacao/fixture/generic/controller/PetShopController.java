@@ -27,13 +27,13 @@ public class PetShopController {
 
     @PostMapping
     public ResponseEntity<PetShopInseridaResponse> insert(@RequestBody PetShopRequest petShopRequest) {
-        var pessoaInserida = inserirPetShopService.inserir(petShopMapper.toPetShop(petShopRequest));
-        return new ResponseEntity<>(petShopMapper.toPessoaInseridaResponse(pessoaInserida), HttpStatus.CREATED);
+        var petShopInserida = inserirPetShopService.inserir(petShopMapper.toPetShop(petShopRequest));
+        return new ResponseEntity<>(petShopMapper.toPetShopInseridaResponse(petShopInserida), HttpStatus.CREATED);
     }
 
     @GetMapping(path = "{id}")
-    public ResponseEntity<PetShopResponse> getPessoa(@PathVariable Long id) {
-        return ResponseEntity.ok(petShopMapper.toPessoaResponse(consultarPetShopService.consultar(id)));
+    public ResponseEntity<PetShopResponse> getPetShop(@PathVariable Long id) {
+        return ResponseEntity.ok(petShopMapper.toPetShopResponse(consultarPetShopService.consultar(id)));
     }
 
 }
