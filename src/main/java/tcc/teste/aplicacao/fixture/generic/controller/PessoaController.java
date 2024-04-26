@@ -35,5 +35,4 @@ public class PessoaController {
     public ResponseEntity<PessoaResponse> getPessoa(@PathVariable Long id) {
         return ResponseEntity.ok(pessoaMapper.toPessoaResponse(consultarPessoaService.consultar(id)));
     }
-
 }
